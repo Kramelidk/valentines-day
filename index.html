@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentino Diena</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            text-align: center;
+            line-height: 30px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: 100vh;
+            border: 1px solid pink;
+        }
+
+        h1{
+            margin-top: 34vh;
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+        
+        p{
+            font-size: 20px;
+        }
+        
+        button{
+            margin: 20px;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: 2px solid white;
+            transition: 0.2s;
+            box-shadow: 0 0 10px #fd6fa0;
+            background-color: #fd6fa0;
+            
+        }
+        
+        button:hover{
+            box-shadow: 0 0 15px #e986a3;
+            background-color: #e986a3;
+        }
+        
+        img{
+            position: absolute;
+            display: block;
+            top: 55vh;
+            width: 150px;
+            height: 75px;
+            left: 890px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        
+    
+    </style>
+</head>
+<body>
+   
+   <h1 id="h1">Valentino diena</h1>
+   
+   <p id="p">Su šv. Valentino diena!<br>
+      Lai gyvenimas bus kaip daina.<br>
+      O gyvenime - viskas puiku:<br>
+      Meilės, laimės tikrai nepritrūks.
+   </p>
+   
+   <button onclick="fonas()" id="button">Spausti</button>
+   
+   <img src="birds.png" id="img">
+   
+   <script>
+    
+       function fonas(){
+           document.body.style.backgroundImage = 'url(heart-3101306.png)';
+           document.getElementById('h1').style.fontFamily = 'Montserrat';
+           document.getElementById('p').style.fontFamily = 'Montserrat';
+           document.getElementById('button').style.opacity = 0;
+           document.getElementById('h1').style.marginTop = '36vh';
+           document.getElementById('img').style.opacity = 1;
+       }
+    
+   </script>
+    
+</body>
+</html>
